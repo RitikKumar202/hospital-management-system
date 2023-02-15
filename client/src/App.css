@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ================= register & login form css ==================== */
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-form {
+    padding: 30px;
+    /* width: 360px; */
+    border: 1px solid #e1e1e1;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.redirect-login,
+.redirect-register {
+    margin: 20px;
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+/* =========== layout styling ============== */
+.main {
+    padding: 10px;
+    height: 100vh;
+}
+
+.layout {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 10vh;
+    margin-bottom: 18px;
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo i {
+    color: #ba0303;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #ba0303;
+    font-size: 1rem;
+}
+
+.menu-item i {
+    font-size: 1rem;
+    margin-right: 8px;
+    color: #ba0303;
+}
+
+.active {
+    background: #ba0303;
+}
+
+.active a,
+.active i {
+    color: #ffff;
+}
+
+.body {
+    /* height: 85vh; */
+    border-radius: 4px;
+    margin-bottom: 18px;
+    padding: 10px;
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;
+}
+
+.notification i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 16px;
+}
+
+/*============== apply-doc css ============= */
+.apply-doc-head,
+.notification-pg,
+.users-list,
+.doc-lists,
+.doc-profile,
+.doc-list {
+    padding-top: 6px;
+}
+
+.apply-doc-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply-doc-input {
+    width: 450px;
+}
+
+.apply-doc-input input {
+    border: 1px solid #393636;
+    padding: 5px 10px;
+}
+
+.apply-doc-btn {
+    padding: 5px 15px;
+}
+
+/* ===================== notification page styling ================= */
+.notification-read {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.notification-read p {
+    font-size: 16px;
+    background: #ccc;
+    text-align: center;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #4b3e3e;
+}
+
+.notification-read p:hover {
+    background: #b0adad;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #393636;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* =================== update doctor profile ============ */
+.update-doc-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-doc-input {
+    width: 450px;
+}
+
+.doc-input input {
+    border: 1px solid #393636;
+    padding: 5px 10px;
+}
+
+.update-doc-btn {
+    padding: 5px 15px;
+}
+
+/* ======================= doctor list styling // homepage ================= */
+.doc-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    background: #dc1e1e;
+    color: #ffff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-body span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* ========== booking page styling =========== */
+.booking-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.booking-body {
+    padding: 15px;
+    border: 1px solid #dc1e1e;
+    border-radius: 5px;
+}
+
+.booking-inputs {
+    padding-bottom: 6px;
+}
+
+.m-2 {
+    border: 1px solid #393636;
+}
+
+/* ============ footer css ========= */
+footer {
+    text-align: center;
+    color: #8e8c8c;
+    padding-bottom: 6px;
+}
+
+footer i {
+    color: #e82626;
+}
+
+footer span {
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #1d1b1b;
+}
+
+/* ============= Responsive =============== */
+.nav-btn {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 880px) {
+    .menu-item a {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        z-index: 9999;
+        margin-right: 200px;
+    }
+
+    .nav-btn-bars {
+        margin-right: 200px;
+    }
+
+    .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        background: #ccc;
+        transition: 1s;
+        transform: translateY(-100%);
+        z-index: 999;
+    }
+
+    .header .responsive_nav {
+        transform: none;
+    }
+
+    .notification {
+        z-index: 999;
+    }
+
+    .nav-close-btn {
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        margin-right: 100px;
+    }
+
+    .nav-btn-bars {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .apply-doc-input {
+        width: 350px;
+    }
+
+    .update-doc-input {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .apply-doc-input {
+        width: 300px;
+    }
+
+    .update-doc-input {
+        width: 300px;
+    }
+}
